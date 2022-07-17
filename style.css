@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+min-height: 100vh;
+margin:0;
+padding: 0;
+font-family: 'Nunito Sans', sans-serif;
+
+}
+li a {text-decoration: none;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+font-weight: 400;
+font-size: 18px;}
+/*
+* {box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: lightblue;}
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 7%;
+  background: white;
+  
+  } 
+ul {margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*small amount of padding to make the nav items and brand logo appear in a stright line*/
+.nav_links {padding: 10px 10px; 
+  list-style: none;
+}
+.logo{  transition:all 0.3s ease 0s;
+  cursor:pointer;}
+.logo:hover{
+  padding: 6px;
+
+  background-color: rgb(250, 133, 44);
+}
+.nav_links li{display: inline-block;
+padding-right: 8px;
+padding-left: 5px;
+}
+
+.nav_links li a {transition:all 0.3s ease 0s;}
+.nav_links li a:hover {background-color: rgb(250, 133, 44);
+padding: 12px 6px;
+border-radius: 6px;
+
+}
+
+.menu_button {
+  display: flex;
+  justify-content: center;
+}
+.btn {background-color: rgb(250, 133, 44);
+  border: none;
+  color: aliceblue;
+padding: 30px 100px;
+width: 100%;
+  display: inline-block;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:x-large;
+  font-weight:bold;
+  border-radius: 20px;
+  transition:all 0.3s ease 0s;
+  cursor:pointer;
+}
+.btn_smaller{  
+  background-color: rgb(250, 133, 44);
+  border: none;
+  color: aliceblue;
+padding: 22px 65px;
+width: 100%;
+  display: inline-block;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:large;
+  font-weight:bold;
+  border-radius: 20px;
+  transition:all 0.3s ease 0s;
+  cursor:pointer;}
+
+
+.btn:hover{background-color: rgb(215, 98, 8);}
+
+
+/*seting maximum limit on image width to have it be responsive on smaller size but no too large on bigger screens*/
+  @media only screen and (min-width: 600px) {
+    .heading_text{  display: flex;
+      justify-content: left;}
+      .para_layout{  display: flex;
+        justify-content: left;}
+    img {
+max-width: 700px;
+ }
+
+
+  }
+  .home_image {
+  display: flex;
+  justify-content: center;}
+.gallery{
+  display: grid;
+  justify-content: center;
+  border-radius: 60px;
+
+}
+.gallery img{padding: 20px;
+  animation-duration: 5s;
+  animation-name: right-to-left;}
+
+
+  @keyframes right-to-left {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
+
+
+h1  {
+  padding: 0px 7%;
+background: rgb(255, 255, 255);
+font-weight: 300;
+}
+
+.heading_text {
+  padding: 0px 7%;
+  font-weight: bold;
+font-style: italic;
+font-size: large;
+  color:  rgb(250, 133, 44);
+background: rgb(255, 255, 255);
+text-decoration: underline;
+
+}
+.para_layout
+{
+  padding: 0px 7%;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+font-weight: 300;
+font-size: 18px;
+font-style: italic;}              
+.footer_style {background-color: rgb(255, 212, 178);
+display: flex;
+justify-content: center;}
